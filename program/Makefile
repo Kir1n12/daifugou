@@ -6,8 +6,8 @@ CFLAGS   = -Wall -g
 CXXFLAGS = -Wall -g
 
 HEADERS = card.h cardset.h dealer.h gamestatus.h player.h \
-          simpleplayer.h defaultplayer.h thinkTA1.h 
-OBJS = card.o cardset.cpp dealer.o player.o simpleplayer.o defaultplayer.o
+		  simpleplayer.h defaultplayer.h thinkTA1.h group3.h
+OBJS = card.o cardset.cpp dealer.o player.o simpleplayer.o defaultplayer.o group3.o
 
 .SUFFIXES: .o .cc .cpp .c++ .c
 
@@ -69,7 +69,7 @@ clean   :
 #daifugou.o: /usr/include/features.h /usr/include/stdc-predef.h
 #daifugou.o: /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h
 #daifugou.o: /usr/include/bits/long-double.h /usr/include/gnu/stubs.h
-#daifugou.o: /usr/include/bits/types.h /usr/include/bits/typesizes.h
+#daifugou.o: /usr/include/bits/types.h /usr/include/bits/typessizes.h
 #daifugou.o: /usr/include/bits/types/__FILE.h /usr/include/bits/types/FILE.h
 ##daifugou.o: /usr/include/bits/libio.h /usr/include/bits/_G_config.h
 #daifugou.o: /usr/include/bits/types/__mbstate_t.h
@@ -100,3 +100,4 @@ dealer.o: card.h cardset.h player.h gamestatus.h dealer.h
 defaultplayer.o: defaultplayer.h player.h gamestatus.h card.h cardset.h
 player.o: card.h cardset.h player.h gamestatus.h
 simpleplayer.o: card.h cardset.h player.h gamestatus.h simpleplayer.h
+group3.o: group3.h player.h gamestatus.h card.h cardset.h
