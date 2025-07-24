@@ -17,14 +17,16 @@
 #include "thinkTA1.h"
 #include "dealer.h"
 #include "group3.h"
+#include "group2.h"
+
 
 void registerPlayers(Dealer & d) {
     d.regist(new DefaultPlayer("Default1")); 
     d.regist(new DefaultPlayer("Default2")); 
     d.regist(new  SimplePlayer("Simple1 ")); 
-    d.regist(new  SimplePlayer("Simple2 ")); 
     d.regist(new      ThinkTA1("ThinkTA1")); 
     d.regist(new      Group3("Group3"));
+
 }
 
 int main (int argc, char * const argv[]) {
